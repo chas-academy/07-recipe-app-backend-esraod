@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Save;
 use Illuminate\Http\Request;
 use JWTAuth;
+use Response;
 
 class DataController extends Controller
 {
