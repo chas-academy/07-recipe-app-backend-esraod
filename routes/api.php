@@ -23,7 +23,7 @@ Route::group(['middleware' => ['jwt.auth']], function() {
     Route::get('save/{id}', 'DataController@store');
     Route::get('saves', 'DataController@show');
     Route::get('saved/check/{id}', 'DataController@check');
-    Route::get('saved/delete/{id}', 'DataController@delete');
+    Route::delete('saved/delete/{id}', 'DataController@delete');
 
     // Route::get('closed', 'DataController@closed');
 });
